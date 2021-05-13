@@ -16,7 +16,7 @@ sha512sums=('SKIP')
 build() {
   cd "${pkgname}"
   autoreconf -i
-  ./configure
+  ./configure --prefix=/usr
   make
 }
 
